@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8b81fc;
+  font-family: "Lusitana";
+}
+.background {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  overflow: hidden;
+  color: #b592fe;
+  transition: transform 0.2s;
+}
+.background:hover {
+  transform: scale(1.1);
+}
