@@ -141,9 +141,9 @@ body {
   top: 45%;
   left: 45%;
   transform: translate(-45%, -45%) rotate(-90deg);
-  border-bottom: 12px solid #8b81fc;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
+  border-bottom: 14px solid #8b81fc;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
   border-radius: 10px;
 }
 .next::before {
@@ -152,8 +152,8 @@ body {
   top: 45%;
   left: 45%;
   transform: translate(-45%, -45%) rotate(90deg);
-  border-bottom: 12px solid #8b81fc;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
+  border-bottom: 14px solid #8b81fc;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
   border-radius: 10px;
 }
