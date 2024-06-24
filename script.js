@@ -21,3 +21,15 @@ play.addEventListener("click", () => {
 });
 
 //setup the music
+const setMusic = (i) => {
+  bar.value = 0;
+  let song = songs[i];
+  currentMusic = i;
+  music.src = song.path;
+  song.innerHTML = song.name;
+  artist.innerHTML = song.artist;
+  square.style.backgroundImage = 'url('${song.cover}')';
+
+  currentTime.innerHTML = '00:00';
+}
+setMusic(0);
