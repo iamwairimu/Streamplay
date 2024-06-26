@@ -17,6 +17,11 @@ const next = document.querySelector(".next");
 
 //add events to the elements
 play.addEventListener("click", () => {
+  if (play.className.includes(`pause`)) {
+    music.play();
+  } else {
+    music.pause();
+  }
   play.classList.toggle("pause");
 });
 
@@ -28,8 +33,25 @@ const setMusic = (i) => {
   music.src = song.path;
   song.innerHTML = song.name;
   artist.innerHTML = song.artist;
-  square.style.backgroundImage = 'url('${song.cover}')';
+  square.style.backgroundImage = `url('${song.cover}')`;
 
-  currentTime.innerHTML = '00:00';
-}
+  now.innerHTML = "00:00";
+  setTimeout(() => {
+    bar.max = period;
+    period.innerHTML = formatTime(period);
+  }, 300);
+};
 setMusic(0);
+
+//format time
+const formatTime = (time) => {
+  let min = Math.floor(time / 60);
+  if (min < 10) {
+    min = `0${min}`;
+  }
+  let sec = Math.floor(time % 60);
+  if (sec < 10) {
+    sec = `0${sec}`;
+  }
+  return `${min} : ${sec}`;
+};

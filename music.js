@@ -18,10 +18,10 @@ let songs = [
 let songCount = songs.length;
 
 // new song count
-let newSong = 3;
+let newSongNo = 3;
 
 // loop the new songs
-while (true) {
+while (newSongNo <= 5) {
   // increment
   let newSongNo = {
     name: "song ${newSongNo}",
